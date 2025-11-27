@@ -1,8 +1,19 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #f1f5f9;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --text: #ffffff;
+  --card-bg: #1e293b;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f6f8fb;
-  color: #111;
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
 }
 
 .container {
@@ -48,7 +59,8 @@ button {
 
 
 .movie-card {
-  background: #fff;
+  background: var(--card-bg);
+  transition: background 0.3s;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -86,6 +98,73 @@ button:hover {
   background: #111;
   opacity: 0.9;
   transition: 0.2s;
+}
+
+.details-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.details-btn:hover {
+  background: #1e40af;
+}
+
+.movie-details {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--card-bg);
+  color: #fff;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #93c5fd;
+  font-size: 1rem;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.fav-btn {
+  margin-top: 8px;
+  display: inline-block;
+  background: #facc15;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+}
+
+.fav-btn:hover {
+  background: #eab308;
+}
+
+.theme-toggle {
+  margin-left: 20px;
+  font-size: 1.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
 }
 
 
