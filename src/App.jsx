@@ -1,7 +1,7 @@
 import Home from "./pages/Home.jsx";
 import MovieDetails from "./pages/MovieDetails.jsx";
 import Favorites from "./pages/Favorites.jsx";
-import Navbar from "./components/NavBar.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
