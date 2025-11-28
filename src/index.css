@@ -5,7 +5,7 @@
 }
 
 [data-theme="dark"] {
-  --bg: #0f172a;
+  --bg: #182135;
   --text: #ffffff;
   --card-bg: #1e293b;
 }
@@ -128,7 +128,6 @@ button:hover {
   align-items: center;
   padding: 15px 30px;
   background: var(--card-bg);
-  color: #fff;
 }
 
 .nav a {
